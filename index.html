@@ -150,6 +150,13 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/include.js"></script>
-
+			<script src="assets/js/component.js"></script>
 	</body>
+	<script type="text/javascript">
+		function setUrl(menuId) {
+			var url = window.location.pathname;//设置或获取对象指定的文件名或路径。
+			location.href = url + '?menuId=' + menuId;
+			//return false;//在ie6下，如果不写return false可能有问题。
+		}
+	</script>
 </html>
